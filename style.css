@@ -1,0 +1,1149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+
+html{
+  font-size: 82.5%;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+body{
+  /* background: #f7f7f7; */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* html,
+body {
+	font-size: 14px;
+	font-family: Lato;
+} */
+
+a {
+	text-decoration: none;
+}
+
+
+.navbar {
+	background: #fff;
+
+}
+
+
+
+.header-fixed {
+	box-shadow: 0 12px 15px rgba(140, 152, 164, 0.1);
+	background: #fff;
+}
+
+.navbar-brand {
+	color: #292929;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+.navbar-nav {
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.navbar-nav li {
+	padding-left: 25px;
+}
+
+.navbar-nav li a {
+	color: rgb(0 0 0 / 81%);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.navbar-toggler {
+	box-shadow: none !important;
+	border: 1px solid #b3b3b3;
+	padding: 6px 10px;
+}
+
+@media only screen and (max-width:768px) {
+	.navbar-nav li {
+		width: 100%;
+		float: left;
+		padding: 10px 0px 10px 10px;
+		border-bottom: 1px solid #ebebeb;
+	}
+}
+
+.navbar-nav li a:hover {
+	color: red;
+}
+
+/* Navbar end */
+
+
+/* Banner Section */
+
+.main-section {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.banner-left h1 {
+	margin-top: 30%;
+}
+
+.banner-left h1 {
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.banner-left h2 {
+	color: #292929;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.banner-left h3 {
+	color: #292929;
+	font-weight: 600;
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.banner-left p {
+	font-size: 16px;
+	line-height: 30px;
+	color: #607D8B;
+}
+
+.head-bottom {
+	height: 3px;
+	width: 140px;
+	margin-bottom: 9px;
+	margin-top: 0px;
+	display: inline-block;
+	background-color: #ea4020;
+}
+
+.banner-btn {
+	margin-top: 40px;
+}
+
+.banner-btn button {
+	padding: 14px 40px;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	background-color: #ea4020;
+	font-size: 16px;
+}
+
+.banner-top {
+	padding: 40px;
+	position: relative;
+	margin-top: 80px;
+}
+
+.banner-img {
+	border-radius: 50% 50% 0% 50%;
+	border: 15px solid #292929 !important;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+}
+
+.banner-img img {
+	width: 100%;
+}
+
+.banner-top:before {
+	content: "";
+	background-image: url(dots.png);
+	position: absolute;
+	top: 0;
+	left: -40px;
+	right: 0;
+	bottom: 0;
+	background-position: left;
+	background-size: cover;
+	animation-name: rotate;
+	animation-duration: 80s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(-360deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.banner-top:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	width: 200vw;
+	border: 20px solid #ea4020;
+	border-radius: 310px;
+	background: #fff;
+}
+
+.typing {
+	position: relative;
+	width: fit-content;
+	padding-right: 20px;
+}
+
+.typing::after {
+	content: "|";
+	position: absolute;
+	right: 0;
+	width: 100%;
+	color: black;
+	background: #fff;
+	animation: typing 6s steps(22) infinite, caret 1s infinite;
+}
+
+@-webkit-keyframes typing {
+	to {
+		width: 0;
+	}
+}
+
+@keyframes typing {
+	to {
+		width: 0;
+	}
+}
+
+@-webkit-keyframes caret {
+	50% {
+		color: transparent;
+	}
+}
+
+@keyframes caret {
+	50% {
+		color: transparent;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.banner-left h1 {
+		margin-top: 80px;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.banner-left h2 {
+		font-size: 40px;
+		margin: 0px;
+	}
+
+	.banner-left h3 {
+		font-size: 22px;
+	}
+
+	.banner-left .head-bottom {
+		height: 2px;
+		width: 90px;
+	}
+}
+
+
+/* Banner Section End */
+
+/* about section starts */
+.heading {
+	font-size: 3.5rem;
+	color: rgb(32, 32, 32);
+	font-weight: 800;
+	text-align: center;
+  }
+  .heading span {
+	color: rgb(167, 3, 3);
+  }
+
+.about {
+	/* background: rgb(255, 255, 255); */
+	background-color: #f7f6ff;
+	margin-top: 90px;
+	padding-top: 70px;
+	
+  }
+  .about .row {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	flex-wrap: wrap;
+	padding: 4rem;
+  }
+  .about .row .image {
+	text-align: center;
+	flex: 1 1 35rem;
+  }
+  .about .row .image img {
+	margin: 4rem;
+	width: 30rem;
+	height: auto;
+	border-radius: 5%;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+	mix-blend-mode: luminosity;
+	transition: 0.3s;
+	cursor: pointer;
+  }
+  .about .row .image img:hover {
+	mix-blend-mode: normal;
+  }
+  .about .row .content {
+	flex: 1 1 45rem;
+	padding: 3rem;
+  }
+  .about .row .content h3 {
+	color: rgb(27, 27, 27);
+	font-size: 2.5rem;
+  }
+  .about .row .content .tag {
+	font-size: 1.4rem;
+	color: #c50e1d;
+	font-weight: 600;
+	margin-top: 1rem;
+  }
+  .about .row .content p {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+	font-family: "Nunito";
+	font-weight: 600;
+	text-transform: none;
+  }
+  .about .row .content .box-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	font-family: "Nunito";
+	font-weight: 600;
+  }
+  .about .row .content .box-container .box p {
+	text-transform: none;
+  }
+  .about .row .content .box-container .box p span {
+	color: #c50e1d;
+  }
+  .resumebtn {
+	margin-top: 6rem;
+  }
+  .resumebtn .btn {
+	padding: 1.7rem 3rem;
+	border-radius: 0.5em;
+	transition: 0.3s;
+	color: #fff;
+	background: #dc0d1b;
+	box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+	font-family: "Nunito", sans-serif;
+  }
+  .resumebtn .btn span {
+	font-weight: 600;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+  }
+  .resumebtn .btn i {
+	margin-left: 0.3rem;
+	font-size: 1.2rem;
+	transition: 0.3s;
+  }
+  .resumebtn .btn:hover {
+	background: #1a047e;
+  }
+  .resumebtn .btn:hover i {
+	transform: translateX(5px);
+  }
+  /* about media queries starts*/
+  @media screen and (max-width: 600px) {
+	.about .row .image {
+	  margin-top: 2rem;
+	}
+	.about .row .image img {
+	  margin: 0 auto;
+	  width: 80%;
+	  mix-blend-mode: normal;
+	}
+	.about .row {
+	  padding: 0.5rem;
+	  margin-bottom: 7rem;
+	}
+	.about .row .content {
+	  padding: 1rem;
+	}
+	.about .row .content .box-container {
+	  gap: 0;
+	}
+  }
+
+
+  /* about media queries ends*/
+  /* about section ends */
+  
+
+
+  
+/* education section starts */
+.education {
+  background: #e5ecfb;
+  min-height: 80vh;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.education .qoute {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.education .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.education .box-container .box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  background: rgb(252, 252, 252);
+}
+.education .box-container .box:hover {
+  transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+.education .box-container .box .image {
+  flex: 1 1 1rem;
+  width: 100%;
+}
+.education .box-container .box img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+ 
+}
+.education .box-container .box .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+}
+.education .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #012970;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 1rem;
+}
+.education .box-container .box .content p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+.education h4 {
+  font-size: 2rem;
+  color: rgb(34, 109, 0);
+  text-align: left;
+  margin: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+/* education media queries starts*/
+@media screen and (max-width: 600px) {
+  .education .box-container .box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .education .box-container .box .image {
+    width: 100%;
+    height: 25rem;
+  }
+  .education .box-container .box img {
+    width: 100%;
+  }
+  .education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 0;
+  }
+  .education .btns {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+  }
+}
+/* education media queries ends*/
+/* education section ends */
+
+
+/* skills */
+
+.containerr{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top: 90px;
+}
+
+.containerr h1{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.containerr .skill{
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.containerr .skill h3{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.containerr .skill h4{
+    float: right;
+}
+
+.containerr .skill .skill-bar{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 17px;
+    border-radius: 15px;
+    background: #48cae4;
+}
+
+.containerr .skill .fill-bar{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 17px;
+    border-radius: 15px;
+    background: #0077b6;
+}
+
+.containerr .skill .html{
+    animation: html 2s;
+    width: 95%;
+}
+
+.containerr .skill .css{
+    animation: css 2s;
+    width: 85%;
+}
+
+.containerr .skill .javascript{
+    animation: javascript 2s;
+    width: 70%;
+}
+
+.containerr .skill .php{
+    animation: php 2s;
+    width: 85%;
+}
+
+.containerr .skill .react{
+    animation: react 2s;
+    width: 65%;
+}
+
+@keyframes html{
+    from{
+        width: 0;
+    }
+    to{
+        width: 95%;
+    }
+}
+
+@keyframes css{
+    from{
+        width: 0;
+    }
+    to{
+        width: 85%;
+    }
+}
+
+@keyframes javascript{
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+
+@keyframes php{
+    from{
+        width: 0;
+    }
+    to{
+        width: 85%;
+    }
+}
+
+@keyframes react{
+    from{
+        width: 0;
+    }
+    to{
+        width: 65%;
+    }
+}
+
+
+
+
+/* -------- work--------- */
+
+#portfolio{
+    padding: 50px 0px;
+	background-color: #f7f6ff;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+#my-work{
+    display: none;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work:hover img{
+    transform: scale(1.0);
+}
+
+.work img{
+    border-radius: 10px;
+    width: 103%;
+    height: 350px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    /* height: 0%; */
+	opacity: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    background: transparent;
+    color: #fff;
+}
+
+.layer p{
+    background: transparent;
+    color: #fff;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.layer a i{
+    color: #ff004f;
+    background: #fff;
+}
+
+.work:hover .layer{
+    height: 100%;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.button{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--secondary-color);;
+    transition: background 0.5s;
+}
+
+.button:hover{
+    background: #ff004f;
+}
+
+
+
+/* -----------------contact--------------- */
+
+#contact{
+	background: linear-gradient(to bottom, #dcdcff, #c2c2fffc);
+	padding-top: 90px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+    display: flex;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 10px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    transform: translateY(-5px);
+}
+
+.social-icons a i:hover{
+    color: #ff004f;
+}
+
+.button.button-2{
+    display: inline-block;
+    background: #ff004f;
+    transition: transform 0.2s;
+}
+
+.button.button-2:hover{
+    transform: translateY(-5px);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .button-2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+form .button-2:hover{
+    transform: translateY(-5px);
+}
+
+.copyright p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    /* background: #262626; */
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright p i{
+    color: #ff004f;
+}
+
+
+
+
+/* ----------- Skills ----------- */
+#skills{
+  background-color:#f7f6ff;
+  margin-top: -60px;
+}
+
+
+.mh-skills-inner{
+padding-top: 90px;
+}
+
+#skills .container .row{
+  margin-top: 60px;
+}
+
+#skills .mh-professional-skills{
+  padding-right: 190px;
+  color: var(--secondary-color);
+  padding-bottom: 90px;
+}
+
+#skills .mh-professional-skills h3{
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.mh-professional-skills{
+  padding-left: 20%;
+  color: var(--secondary-color);
+}
+
+.mh-professional-progress li{
+  display: inline-block;
+  margin: 0 auto;
+  float: none;
+  width: 48%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mh-progress{
+  margin-bottom: 10px;
+  font: 900 1.14285/1 Cinzerl, cursive;
+  color: var(--secondary-color);
+}
+
+/* this classes are predefined in circle.js */
+
+.mh-progress .progressbar-text{
+  color: inherit !important;
+}
+
+.progress.progressbar-line{
+  height: 10px;
+  margin-right: 60px;
+}
+
+.progress.progressbar-line .progress-text{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 60px;
+  transform: translate(-35%);
+  text-align: center;
+}
+
+.mh-progress.mh-progress-circle{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+}
+
+.mh-progress path:nth-child(1){
+  stroke: rgba(0,0,0,0.7);
+}
+
+.mh-progress path:nth-child(2){
+  stroke: #ff004f !important;
+}
+
+.candidatos{
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.candidatos .pracial{
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.candidatos .pracial .info{
+  position: relative;
+}
+
+.candidatos .pracial .info .nome{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.candidatos .pracial .info .percentage-num{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.candidatos .pracial .progressBar{
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin: 30px 0 2px;
+  border-radius: 10px;
+  background:rgba(0,0,0,0.5);
+}
+
+.candidatos .pracial .percentagem{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #ff004f;
+}
+
+.progressBar div {
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.animated {
+  animation: progress 1s ease-in;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+}
+
+/* new circular bar  */
+
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 8rem;
+  --fg: #ff004f;
+  --bg: #def;
+  --bl: black;
+  --bo: rgba(0,0,0,0.5);
+  --pgPercentage: var(--value);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(closest-side, var(--primary-color) 90%, transparent 0 99.9%, var(--primary-color) 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bo) 0)
+    ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 8);
+    color: var(--secondary-color);
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.is-animating {
+  animation: growProgressBar 1.5s 1 forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+
+
+
+/* this classes are predefined in circle.js */
+
+.mh-progress .progressbar-text{
+  color: inherit !important;
+}
+
+.progress.progressbar-line{
+  height: 10px;
+  margin-right: 60px;
+}
+
+.progress.progressbar-line .progress-text{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 60px;
+  transform: translate(-35%);
+  text-align: center;
+}
+
+.mh-progress.mh-progress-circle{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+}
+
+.mh-progress path:nth-child(1){
+  stroke: rgba(0,0,0,0.7);
+}
+
+.mh-progress path:nth-child(2){
+  stroke: #ff004f !important;
+}
+
+.candidatos{
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.candidatos .pracial{
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.candidatos .pracial .info{
+  position: relative;
+}
+
+.candidatos .pracial .info .nome{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.candidatos .pracial .info .percentage-num{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.candidatos .pracial .progressBar{
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin: 30px 0 2px;
+  border-radius: 10px;
+  background:rgba(0,0,0,0.5);
+}
+
+.candidatos .pracial .percentagem{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #ff004f;
+}
+
+.progressBar div {
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.animated {
+  animation: progress 1s ease-in;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+}
+
+
+
+/* circle animation */
+
+
