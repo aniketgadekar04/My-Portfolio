@@ -446,7 +446,8 @@
           <a href="#" download class="button button-2">Download CV</a>
         </div>
         <div class="contact-right animate-on-scroll">
-          <form name="submit-to-google-sheet">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="ce0620a5-84bd-4d2d-8319-dcc32b32096f">
             <input type="text" name="Name" placeholder="Your Name" required />
             <input type="email" name="Email" placeholder="Your Email" required />
             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
